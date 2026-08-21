@@ -664,7 +664,7 @@
       </div>
     </div>
 
-    <!-- ORDER SUMMARY + SQUARE CHECKOUT -->
+    <!-- ORDER SUMMARY +  CHECKOUT -->
     <div class="panel" style="margin-top:1px; border:1px solid var(--line); border-radius:4px;">
       <h4>5. Order summary &amp; checkout</h4>
       <div id="orderSummary" style="display:flex; gap:28px; flex-wrap:wrap; align-items:flex-end; margin-bottom:12px;">
@@ -688,10 +688,10 @@
       <p id="quoteNote" class="mono" style="font-size:11px; color:var(--paper-dim); display:none; margin-bottom:16px;"></p>
 
       <div id="card-container" style="max-width:420px; margin-bottom:16px;"></div>
-      <button class="btn-sm primary" id="cardButton" style="min-width:220px;">Pay with Card - Powered by Square</button>
+      <button class="btn-sm primary" id="cardButton" style="min-width:220px;">Pay with Card - Powered by </button>
       <div id="payment-status" class="mono" style="margin-top:12px; color:var(--paper-dim);"></div>
       <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--paper-dim); margin-top:18px; line-height:1.6;">
-        Secure checkout processed by Square. Your card details never touch our server directly - Square tokenizes them in your browser first.
+        Secure checkout processed by . Your card details never touch our server directly -  tokenizes them in your browser first.
       </p>
     </div>
   </div>
@@ -1371,7 +1371,7 @@ document.getElementById('generalContactBtn').addEventListener('click', ()=>{
 // ---------- SQUARE CHECKOUT ----------
 // Replace these with your real values from the Square Developer Dashboard (Application ID
 // and Location ID are both safe to expose in client-side code - they are NOT secret).
-const SQUARE_APP_ID = 'sandbox-sq0idb-k-QagGfsggWZAGNtInNxhA;
+const SQUARE_APP_ID = 'sandbox-sq0idb-k-QagGfsggWZAGNtInNxhA';
 const SQUARE_LOCATION_ID = 'L0Y0R11YCF1HR';
 
 let squareCard = null;
