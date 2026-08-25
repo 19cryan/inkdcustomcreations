@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: inkd-custom-creations
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SQUARE_ENVIRONMENT
+        value: sandbox
+      - key: SQUARE_ACCESS_TOKEN
+        sync: false
+      - key: SQUARE_LOCATION_ID
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_APP_PASSWORD
+        sync: false
+      - key: ORDER_NOTIFICATION_EMAIL
+        sync: false
